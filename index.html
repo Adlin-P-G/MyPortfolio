@@ -3,60 +3,229 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>repl.it</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link href="./style.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Adlin.P.G</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">My Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">My Work</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact Me</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<main class="container mt-3">
-	<section class="d-flex justify-content-sm-center align-items-center flex-column-reverse gap-3 flex-md-row">
-		<div class="d-flex justify-content-sm-center align-items-center flex-column flex-md-column justify-content-md-start">
-			<h5>Hai👋</h5>
-			<h2>I'm Adlin</h2>
-			<p>Software Developer</p>
-			<button class="btn btn-primary btn-sm">My Resume</button>
+	<div class="background-container">
+		<div class="stars"></div>
+		<div class="twinkling"></div>
+	</div>
+	<div class="container">
+		<h1 class="heading" data-target-resolver></h1>
+	</div>
+	<nav class="geistMonoFontStyle">
+		<div style="background-color: rgb(29, 27, 27); height: 3.5em; width: 85em; position: absolute; border-bottom: 1px solid grey;">
+		<a href="#" style="text-decoration: none;">
+			<span style="font-size: 100%; position: relative; top: 0em; left: 2.3em;">I'm</span>
+			<h1 class="myname" style="position: absolute; top: 0.5em; left: 1em;"><span>A</span>d<span>l</span>i<span>n</span></h1>
+		</a>
+		<ul>
+			<a href="#about" style="text-decoration: none;"><li>About</li></a>
+			<a href="#skills" style="text-decoration: none;"><li>Skills</li></a>
+			<a href="#projects" style="text-decoration: none;"><li>Projects</li></a>
+			<a href="#achieve" style="text-decoration: none;"><li>Achievements</li></a>
+			<a href="#" style="text-decoration: none;"><li>Certificates</li></a>
+			<a href="#" style="text-decoration: none;"><li>Contact</li></a>
+		</ul>
 		</div>
-		<div class="w-50 w-50">
-			<img src="https://i.ibb.co/Z6YrGV/IMG-20210527-184226.jpg" alt="Adlin" class="w-100 h-100 rounded-circle shadow">
+	</nav>
+	<div class="content">
+			
+		<a href="./images/RESUME.pdf" target="_blank">
+			<div class="moon floating-text">
+				<div class="myurl">
+					<h3 style="color:rgb(228, 16, 16);">Resume</h3>
+				</div>
+			</div>
+		</a>
+		<a href="" target="_blank">
+			<div class="moonServiceNow floating-text">
+				<img class="snow" src="./images/servicenowLogo.png">
+			</div>
+		</a>
+		<a href="https://www.linkedin.com/in/adlin-p-g-5a5159225/" target="_blank">
+			<div class="violet floating-text">
+				<div class="myurl">
+					<h3 style="color:blue;">LinkedIn</h3>
+				</div>
+			</div>
+		</a>
+		<a href="https://github.com/Adlin-P-G" target="_blank">
+			<div class="moonLi floating-text">
+				<img class="github" style="height: 80px; width: 80px; position: absolute;" src="./images/github.png">
+			</div>
+		</a>
+		<a href="https://www.hackerrank.com/profile/pgadlinlin" target="_blank">
+			<div class="hacker floating-text">
+				<div class="myurl">
+					<h3 style="color:green;">HackerRank</h3>
+				</div>
+			</div>
+		</a>
+		<a href="https://leetcode.com/u/JNyjTVGqeZ/" target="_blank">
+			<div class="leetcode floating-text">
+				<div class="myurl">
+					<h3 style="color:orange;">LeetCode</h3>
+				</div>
+			</div>
+		</a>
+
+		<div style=" height: 10em;"></div>
+		<div style=" height: 6em;"></div>
+		<div class="img" style="position: relative; left:13em; width: 29.5%; border-radius: 50%;">
+			<img class="pho" style="height: 25em; border-radius: 50%; filter: grayscale(50%); transition: transform 0.8s ease-in-out; " src="./images/myphoto.jpg" alt="myPhoto">
+			<div class="outlineImg"></div>
 		</div>
-	</section>
-	<section>
-		<h2>My Skill Set</h2>
-		<p>writing the program</p>
-	</section>
-	<section>
-		<h2>My Work</h2>
-		<p>
-			I'm a student, I will study in college(3 year)
-		</p>
-	</section>
-	<section>
-		<h2>Contact Me</h2>
-		<p>9361933665</p>
-	</section>
-</main>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+		<div class="anim">
+			<div class="scroll-down"></div>
+		</div>
+		<div style=" height: 3em;"></div>
+		<div class="maincont">
+			<div id="about" style=" height: 3em;"></div>
+
+			<div class="head">About Me, </div>
+			<div class="subHead"><h1>Overview</h1></div>
+			<div style="font-size: larger;">I'm a <q><em>Recent Computer Science Graduate (2024)</em></q> with a 
+				<strong>Strong Foundation</strong> in <em>ServiceNow, ITSM, ITIL, Python, Django, HTML, CSS, JavaScript, Bootstrap 
+				and SQL Server(MSSQL)</em> and also <strong>Basic Proficiency</strong> in <em>PowerBI, Java, .NET, PHP, 
+				C, and C++</em>. Proven ability to develop and maintain robust web applications. Seeking a 
+				challenging role to apply my technical skills and contribute to innovative projects. Passionate 
+				about leveraging technology to create impactful solutions.
+			</div>
+			<div style=" height: 4em;"></div>
+			<div class="subHead"><h1> Internship</h1></div>
+			<div style="font-size: larger;"><h3>JAAS IT Technologies Pvt Ltd. -ServiceNow Developer (Internship)</h3></div>
+			<div style="font-size: x-large; font-weight: 600;"><pre>From:January 2025   To:May 2025</pre></div>
+			<div style="font-size: larger;">
+				Hands-on experience in <strong>ITSM modules</strong> such as <q>Incident Management, Problem Management, Change Management,
+				and Service Catalog</q>. Expertise in <strong>Scripting area</strong> such as <q>Business Rules, Client Scripts, Script Includes, 
+				and Script Background</q>. <strong>Developed customized applications</strong> by using <q>HTML, CSS, JavaScript and Bootstrap</q>.
+				And also familiar with <q>UI Policy, UI Action, Data Policy, and Access Control List (ACL), (Service Level 
+				Agreements) SLAs, Notifications and <strong>Flow Designer</strong></q>
+			</div>
+			<div style=" height: 2em;"></div>
+			<div style="font-size: larger;"><h3>INBOX INFO SOLUTIONS Pvt Ltd. -Python, Django (Paid Internship)</h3></div>
+			<div style="font-size: x-large; font-weight: 600;"><pre>From:December 2023   To:July 2024</pre></div>
+			<div style="font-size: larger;">Hands-on experience in <strong>Full-Stack Development</strong>. 
+				Successfully <q><em>collaborated with teams to develop and maintain scalable web applications
+				</em></q>. To enhance technical skills through <strong>daily coding challenges</strong> and 
+				<strong>mentorship</strong>. During Internship, I learned skills like, <em>Python, Django, 
+				HTML, CSS, JavaScript, Bootstrap and SQL Server</em>.
+			</div>
+			<div style=" height: 4em;"></div>
+
+			<div class="subHead"><h1>Education</h1></div>
+			<div style="font-size: larger;"><h3>Bharathidasan University -<span style="font-weight: 800;">M.Sc Computer Science</span></h3></div>
+			<div style="font-size: x-large; font-weight: 600;"><pre>CGPA: 8.35/10 (Augest 2022 - April 2024)</pre></div>
+			<div style="font-size: larger;"><h3>Nesamony Memorial Christian College -<span style="font-weight: 800;">B.Sc Computer Science</span></h3></div>
+			<div style="font-size: x-large; font-weight: 600;"><pre>CGPA: 7.98/10 (July 2019 - April 2022)</pre></div>
+			<div id="skills" style=" height: 5em;"></div>
+
+			<div class="head">Skills, </div>
+			<div style=" height: 3em;"></div>
+			<div style="display: grid; grid-template-columns: auto auto auto auto auto auto; row-gap: 2em;">
+				<div style="text-align: center; width: 7em;">
+					<div class="skills"><img style="position: relative; top:0.5em;" width="100%" src="./images/snowLogo.png"></div>
+					<div class="skillN"><h3>SNOW</h3></div>
+				</div>
+				<div style="text-align: center; width: 7em;">
+					<div class="skills"><img width="100%" src="./images/python.png"></div>
+					<div class="skillN"><h3>Python</h3></div>
+				</div>
+				<div style="text-align: center; width: 7em;">
+					<div class="skills"><img style="position: relative; top:2.5em;" width="90%" src="./images/django.png"></div>
+					<div class="skillN"><h3>Django</h3></div>
+				</div>
+				<div style="text-align: center; width: 7em;">
+					<div class="skills"><img style="position: relative; top:1.5em;" width="70%" src="./images/javaScript.png"></div>
+					<div class="skillN"><h3>JavaScript</h3></div>
+				</div>
+				<div style="text-align: center; width: 7em;">
+					<div class="skills"><img style="position: relative; top:0.7em;" width="80%" src="./images/html.png"></div>
+					<div class="skillN"><h3>HTML</h3></div>
+				</div>
+				<div style="text-align: center; width: 7em;">
+					<div class="skills"><img style="position: relative; top:0.5em;" width="60%" src="./images/css.png"></div>
+					<div class="skillN"><h3>CSS</h3></div>
+				</div>
+				<div style="text-align: center; width: 7em;">
+					<div class="skills"><img style="position: relative; top:2em;" width="80%" src="./images/sql.png"></div>
+					<div class="skillN"><h3>SQL</h3></div>
+				</div>
+				<div style="text-align: center; width: 7em;">
+					<div class="skills"><img style="position: relative; top:1.5em;" width="80%" src="./images/bootstrap.png"></div>
+					<div class="skillN"><h3>Bootstrap</h3></div>
+				</div>
+				<div style="text-align: center; width: 7em;">
+					<div class="skills"><img style="position: relative; top:1em;" width="90%" src="./images/msSql.png"></div>
+					<div class="skillN"><h3>MS-SQL</h3></div>
+				</div>
+				<div style="text-align: center; width: 7em;">
+					<div class="skills"><img style="position: relative; top:0.7em;" width="80%" src="./images/git.png"></div>
+					<div class="skillN"><h3>Git</h3></div>
+				</div>
+				<div style="text-align: center; width: 7em;">
+					<div class="skills"><img style="position: relative; top:1em;" width="70%" src="./images/github.png"></div>
+					<div class="skillN"><h3>GitHub</h3></div>
+				</div>
+			</div>
+			<div style=" height: 6em;"></div>
+			<div id="projects" style=" height: 3em;"></div>
+
+			<div class="head">Projects,</div>
+			<div style="font-size: larger;">The following Projects are showcase my <em>Technical Skills</em> in 
+				<strong>full-stack development</strong>, I believe that demonstrate my ability well.
+			</div>
+			<div style=" height: 4em;"></div>
+			<div style="display: grid; grid-template-columns: auto auto auto; row-gap: 2em;">
+				<div class="card" style="width: 18rem; background-color: rgb(68, 64, 64); box-shadow: 0 0 5px gray;">
+					<img src="./images/projProt.png" class="card-img-top" alt="Portfolio" style="border-bottom: 1px solid gray;">
+					<div class="card-body">
+					  <h5 class="card-title" style="color: white;">Portfolio</h5>
+					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  <a href="#" class="btn btn-primary">Go to &nbsp;<img src="./images/github.png" width="20px"></a>
+					</div>
+				</div>
+				<div class="card" style="width: 18rem; background-color: rgb(68, 64, 64); box-shadow: 0 0 5px gray;">
+					<img src="" class="card-img-top" alt="...">
+					<div class="card-body">
+					  <h5 class="card-title" style="color: white;">Card title</h5>
+					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  <a href="#" class="btn btn-primary">Go to &nbsp;<img src="./images/github.png" width="20px"></a>
+					</div>
+				</div>
+				<div class="card" style="width: 18rem; background-color: rgb(68, 64, 64); box-shadow: 0 0 5px gray;">
+					<img src="" class="card-img-top" alt="...">
+					<div class="card-body">
+					  <h5 class="card-title" style="color: white;">Card title</h5>
+					  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					  <a href="#" class="btn btn-primary">Go to &nbsp;<img src="./images/github.png" width="20px"></a>
+					</div>
+				</div>
+			</div>
+			<div id="achieve" style=" height: 9em;"></div>
+
+			<div class="head">Achievements,<img style="position:absolute; left: 12em;" height="7%" src="./images/rank.png"></div>
+			<div style="color: gold; font-size: xx-large; font-weight: 900;">University Rank Holder ( 11<sup>th</sup> Rank )</div>
+			<div style="font-size: xx-large; font-weight: 600;">Bharathidasan University -M.Sc Computer Science</div>
+			<div style=" height: 3em;"></div>
+			<div style="font-size: x-large;">Achieved <strong>11<sup>th</sup> Rank</strong> among <q><em>several 
+				students under university and affiliated colleges</em></q> in <strong>M.Sc Computer Science at 
+				Bharathidasan University</strong>, demonstrating exceptional academic performance and a strong 
+				foundation for a career in technology.
+			</div>
+			<div style=" height: 9em;"></div>
+			<div class="head">Certificates,</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script src="./dynamic.js"></script>
 </body>
 </html>	

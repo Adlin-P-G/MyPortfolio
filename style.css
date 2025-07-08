@@ -1,0 +1,368 @@
+body::-webkit-scrollbar{
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: white;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+* {
+    box-sizing: border-box;
+    color: white;
+  }
+.floating-text {
+    color: #000; 
+    position: absolute;
+    left: 2em;
+    top: 2em;
+    /* z-index: 0; */
+    animation: float 3s ease-in-out infinite;
+    /* transform: scale(1.03); */
+}
+@keyframes float 
+{ 0%{ 
+        transform: translate(0%, 0%) translateY(0); 
+    } 
+50% { transform: translate(0%, 0%) translateY(-10px); 
+    } 
+100% { transform: translate(0%, 0%) translateY(0); 
+    } 
+}
+.geistMonoFontStyle
+{
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    position: fixed;
+    top: 0em;
+    z-index: 2;
+}
+
+/* .oswald-container {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+} */
+.myname
+{
+    color: white;
+    font-size: 200%;
+}
+.myname span
+{
+    color: gray;
+    text-shadow: -1px -1px 0 white, 
+    1px -1px 0 white, 
+    -1px 1px 0 white, 
+    1px 1px 0 white;
+}
+@keyframes move-background {
+from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+to { 
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+}
+}
+
+.content
+{
+    position: absolute;
+    /* padding: 5%; */
+}
+
+.background-container{
+position: fixed;
+top: 0;
+left:0;
+bottom: 0;
+right: 0;
+/* z-index: 0; */
+}
+  
+.stars {
+background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+display: block;
+}
+
+.twinkling{
+width:10000px;
+height: 100%;
+background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+background-size: 1000px 1000px;
+position: absolute;
+right: 0;
+top: 0;
+bottom: 0;
+z-index: 1;
+
+-moz-animation:move-background 70s linear infinite;
+-ms-animation:move-background 70s linear infinite;
+-o-animation:move-background 70s linear infinite;
+-webkit-animation:move-background 70s linear infinite;
+animation:move-background 70s linear infinite;
+
+}
+
+nav ul
+{
+    list-style-type: none;
+    color: white;
+    display: flex;
+    gap:1.5em;
+    font-size: 150%;
+    position: absolute;
+    left: 15em;
+    top:0.5em;
+}
+
+/* nav ul li
+{
+    padding: 7%;
+} */
+
+nav ul li:hover
+{
+    text-shadow: -1px -1px 0 gray, 
+    1px -1px 0 gray, 
+    -1px 1px 0 gray, 
+    1px 1px 0 gray;
+}
+
+.container {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* height: 50%; */
+    /* width: 700px; */
+    /* border: 2px solid white; */
+    /* padding: 5rem; */
+    font-family: "Oswald", serif;
+    position: absolute;
+    left: 7em;
+    top:10em;
+}
+
+.heading {
+    color: darkgray;
+    font-size: 3rem;
+    font-weight: 400;
+    /* width: 100%; */
+    text-transform: uppercase;
+    /* height: 100%; */
+}
+
+#resume
+{
+    position: absolute;
+    top:10em;
+    left:50em;
+}
+.moon {
+    width: 120px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(228, 16, 16);
+    position: absolute;
+    left: 40em;
+    top: 21em;
+    box-shadow: 0 0 25px rgb(228, 16, 16);
+    transition: width 0.5s, height 0.5s;
+    /* z-index: 1; */
+}
+
+.myurl {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    text-shadow: -1px -1px 0 white, 
+    1px -1px 0 white, 
+    -1px 1px 0 white, 
+    1px 1px 0 white;
+    /* z-index: 0; */
+}
+
+.moon:hover
+{
+    width: 130px;
+    height: 90px;
+}
+
+.violet {
+    width: 120px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+    left: 70em;
+    top: 15em;
+    box-shadow: 0 0 55px blue;
+    transition: width 0.5s, height 0.5s;
+}
+
+.violet:hover
+{
+    width: 130px;
+    height: 90px;
+}
+.moonServiceNow {
+    width: 180px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 55em;
+    top: 9em;
+    box-shadow: 0 0 55px #ccc;
+    transition: width 0.5s, height 0.5s;
+}
+.snow{
+    height: 50px; width: 150px; position: absolute; top:1em; left:1em;
+}
+.moonLi {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ccc;
+    position: absolute;
+    left: 55em;
+    top: 21em;
+    box-shadow: 0 0 15px white;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.moonLi:hover
+{
+    box-shadow: 0 0 30px white;
+}
+
+.hacker {
+    width: 170px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    left: 67em;
+    top: 27em;
+    box-shadow: 0 0 55px green;
+    transition: width 0.5s, height 0.5s;
+}
+
+.hacker:hover
+{
+    width: 180px;
+    height: 100px;
+}
+
+.leetcode {
+    width: 130px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: orange;
+    position: absolute;
+    left: 55em;
+    top: 33em;
+    box-shadow: 0 0 25px orange;
+    transition: width 0.5s, height 0.5s;
+}
+
+.leetcode:hover
+{
+    width: 140px;
+    height: 90px;
+}
+
+.outlineImg
+{
+    height: 25.5em; 
+    width: 25.5em;
+    border: 10px solid black;
+    border-radius: 50%;
+    filter: blur(2px);
+    position: absolute;
+    top:-0.3em;
+    left:-0.3em;
+    transition: transform 0.8s ease-in-out;
+}
+
+.img:hover >.pho, .img:hover>.outlineImg
+{
+    transform: scale(1.03);
+}
+
+/* .img:hover>.outlineImg
+{
+    transform: scale(1.03);
+} */
+
+.scroll-down
+{
+    position: absolute;
+    left: 35em;
+    bottom: 1px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    text-shadow: 0;
+    width: 30px;
+    height: 30px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.anim
+{
+    animation: float 1.5s ease-in-out infinite;
+}
+
+.maincont
+{
+    padding: 7%; 
+    text-align: justify;
+}
+
+.head
+{
+    font-size: 5em; 
+    font-weight: 900;
+}
+
+.subHead
+{
+    font-size: larger; 
+    color: lightgreen;
+}
+
+.skills
+{
+    /* position: absolute;  */
+    background-color: white;
+    border-radius: 50%;
+    width: 7em;
+    height: 7em;
+}
+
+.skillN
+{
+    /* font-size: larger;  */
+    color: rgb(243, 68, 190);  
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-weight: 300; */
+}
